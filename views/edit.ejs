@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<meta charset="utf-8">
+<meta http-equiv"X-UA-Compapitable" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<h1>Enter new grandparent information.</h1>
+	<form method="POST" action="/fruits/<%=fruitsList.id%>?_method=PUT" >
+		Name: <input type="text" name="name" value="<%=elderly.name%>">
+		Age: <input type="text" name="color" value="<%=elderly.age%>">
+		Last Known Location: <input type="text" name="last-known-location" value="<%=elderly.lastKnownLocation%>">
+		>
+		Running Speed: <input type="text" name="running-speed" value="<%=elderly.runningSpeed%>">
+		<input type="submit" value="Submit Changes">
+	</form>
+	<br/>
+	
+</body>
+</html>

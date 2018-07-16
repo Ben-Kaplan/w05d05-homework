@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Track your lost grandparent</h1>
+	<%for (let i = 0; i < elderly.length; i++) { %>
+		<a href="/grandparent/<%= elderly[i].id %>"><%=elderly[i].name%></a>
+			<a href="/grandparent/<%=elderly[i].id%>/edit">Edit</a>
+		<form method="POST" action="/grandparent/<%=elderly[i].id%>?_method=DELETE">
+			<input type="submit" value="DELETE">
+		</form>
+		<% } %>
+		<a href="/grandparent/new">Add a lost grandparent to track.</a>
+
+</body>
+</html>
